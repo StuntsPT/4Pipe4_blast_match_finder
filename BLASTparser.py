@@ -50,7 +50,7 @@ def matching_snp(blast_results):
 				for sSNPs in subject_snps:
 					sSNPs = int(re.sub("\D*", "", sSNPs))
 					if min(subject_start, subject_end) <= sSNPs <= max(subject_start, subject_end):
-						if sSNPs - min(subject_start, subject_end) == qSNPs - min(query_start, query_end):
+						if sSNPs - min(subject_start, subject_end) - int(hit[4]) <= qSNPs - min(query_start, query_end) <= sSNPs - min(subject_start, subject_end) + int(hit[4]):
 							matches += 1
 							print(hit[0], hit[1])
 
