@@ -6,17 +6,17 @@ This program will takes input in a tabular BLAST output, where both the query
  same or similar datasets). It returns the number of SNPs that are a match to
  both assemblies.
 
-##Usage:
+###Usage:
 
 ```
 python3 BLASTparser.py infile.tsv
 ```
 
-##Result:
+###Result:
 
 The number os SNPs that match...
 
-##License:
+###License:
 
 GPLv3
 
